@@ -1,3 +1,10 @@
 venv/
+crop-debug-env/
+
 __pycache__/
 *.pyc
+*.pyo
+
+.ipynb_checkpoints/
+
+.env
