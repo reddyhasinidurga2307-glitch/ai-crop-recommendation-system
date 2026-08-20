@@ -354,16 +354,20 @@ Possible future improvements include:
 
 
 
+## Contributors
+
+- P. Haritha
+- P. Siva Ranjini
+- Varshitha
+- SK. Yasin Begum
+- Madhuria
+- R. Hasini Durga
+
 ## Author
-
-
 
 Hasini Durga
 
-
-
 ## License
-
 
 
 This project is intended for educational and project-development purposes.
