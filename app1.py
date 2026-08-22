@@ -29,6 +29,26 @@ def predict():
         ph = float(request.form['pH'])
         rainfall = float(request.form['Rainfall'])
 
+        if N < 0 or P < 0 or K < 0:
+            raise ValueError("N, P, and K values cannot be negative.")
+
+        if N > 140:
+           raise ValueError("Nitrogen must be between 0 and 140.")
+
+        if P > 145:
+           raise ValueError("Phosphorus must be between 0 and 145.")
+
+        if K > 205:
+            raise ValueError("Potassium must be between 0 and 205.")
+
+        if humidity < 0 or humidity > 100:
+            raise ValueError("Humidity must be between 0 and 100.")
+
+        if ph < 0 or ph > 14:
+            raise ValueError("pH must be between 0 and 14.")
+
+        if rainfall < 0:
+            raise ValueError("Rainfall cannot be negative.")
         feature_list = [N, P, K, temp, humidity, ph, rainfall]
         single_pred = np.array(feature_list).reshape(1, -1)
 
